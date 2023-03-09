@@ -12,6 +12,10 @@ exports.entries = () => {
       import: "./src/entries/test.js",
       filename: "bundle/[name].js",
     },
+    operators: {
+      import: "./src/entries/operators.js",
+      filename: "bundle/[name].js",
+    },
   };
 };
 

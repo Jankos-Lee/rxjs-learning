@@ -11,4 +11,10 @@ exports.htmlPluginParams = [
     template: "./src/html/test.html",
     chunks: ["test"],
   },
+  {
+    title: "Operator 操作符",
+    filename: "operators.html",
+    template: "./src/html/operators.html",
+    chunks: ["operators"],
+  },
 ];
