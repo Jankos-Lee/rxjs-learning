@@ -11,6 +11,7 @@ import {
   concat,
   range,
   merge,
+  filter,
 } from "rxjs";
 
 // from 将对象转为可观察对象
@@ -70,7 +71,7 @@ const obArr = from([1, 2, 3, 4]);
  * merge
  * merge(...args: (number | SchedulerLike | ObservableInput<unknown>)[]): Observable<unknown>
  */
-const result = merge([],[1,2,3],[4,6,7]).subscribe(x => x);
-console.log(result)
+// const result = merge([],[1,2,3],[4,6,7]).subscribe(x => console.log(x));
+// console.log(result)
 
 export default {};
