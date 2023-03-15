@@ -1,15 +1,15 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-//获取所有入口文件配置 和 多页 html 插件
+// 获取所有入口文件配置 和 多页 html 插件
 const { entries, HtmlWebpackPlugins } = require('./webpack.common')
 
-module.exports = {
-  mode: "development",
+module.exports = (env) => ({
+  mode: env,
   devtool: false, // 关闭 source map 警告⚠️
   entry: entries(),
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "../../../rxjs/dist"),
     filename: "bundle.[name].js",
   },
   optimization: {
@@ -45,4 +45,4 @@ module.exports = {
     compress: true,
     port: 9000,
   },
-};
+});

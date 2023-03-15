@@ -54,7 +54,7 @@ const obArr = from([1, 2, 3, 4]);
  */
 
 // const numbers = range(5, 3);
- 
+
 // numbers.subscribe({
 //   next: value => console.log(value),
 //   complete: () => console.log('Complete!')
@@ -73,5 +73,8 @@ const obArr = from([1, 2, 3, 4]);
  */
 // const result = merge([],[1,2,3],[4,6,7]).subscribe(x => console.log(x));
 // console.log(result)
+
+// const result = range(1, 10).pipe(map((x) => 10 * x));
+// console.log(from(result).subscribe(x => console.log(x)));
 
 export default {};

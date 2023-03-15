@@ -20,7 +20,6 @@ exports.entries = () => {
 };
 
 exports.HtmlWebpackPlugins = () => {
-  console.log(htmlPluginParams)
   return htmlPluginParams.map((param) => {
     return new HtmlWebpackPlugin({
       title: param.title,

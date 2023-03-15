@@ -15,7 +15,6 @@ const operatorBtn = document.getElementById("Operators");
 
 if (observerBtn)
   observerBtn.onclick = () => {
-    console.log(window);
     const originUrl = window.origin;
     window.location.href = `${originUrl}/observer.html`;
   };

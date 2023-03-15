@@ -1,6 +1,7 @@
 const Webpack = require('webpack');
 const WebpackDevServer = require('webpack-dev-server');
-const webpackConfig = require('./webpack.config.js');
+const env =  process.env.NODE_ENV || 'development';
+const webpackConfig = require('./webpack.dev.js')(env);
 
 const compiler = Webpack(webpackConfig);
 const devServerOptions = { ...webpackConfig.devServer, open: true };
