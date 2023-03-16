@@ -1,4 +1,5 @@
-import { Observable } from "rxjs"
+import { Observable } from "rxjs";
+
 
 const observable = new Observable(function (observer) {
   setTimeout(function () {
@@ -16,4 +17,4 @@ const observer = {
 
 observable.subscribe(observer)
 
-export default {}
+export default {};
