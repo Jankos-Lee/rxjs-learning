@@ -235,7 +235,7 @@
     "ws": "^8.12.1"
   },
   "scripts": {
-    "server": "node ./src/webpack/webpack.server.js",
+    "server": "node ./src/webpack/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run server --dev",
     "build": "NODE_ENV=production npx webpack --config ./src/webpack/webpack.prod.js",
@@ -258,6 +258,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "rxjs": "^7.8.0",
+    "virtual-dom": "^2.1.1",
     "vue": "^3.2.47",
     "vue-loader": "^17.0.1",
     "vue-template-compiler": "^2.7.14",

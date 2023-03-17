@@ -12,6 +12,7 @@ console.log("RXJS service is now running on 9000");
 const observerBtn = document.getElementById("observer");
 const testBtn = document.getElementById("test");
 const operatorBtn = document.getElementById("Operators");
+const virtualDom = document.getElementById("VirtualDOM");
 
 if (observerBtn)
   observerBtn.onclick = () => {
@@ -25,9 +26,17 @@ if (testBtn) {
     window.location.href = `${originUrl}/test.html`;
   };
 }
+
 if (operatorBtn) {
   operatorBtn.onclick = () => {
     const originUrl = window.origin;
     window.location.href = `${originUrl}/operators.html`;
+  };
+}
+
+if (virtualDom) {
+  virtualDom.onclick = () => {
+    const originUrl = window.origin;
+    window.location.href = `${originUrl}/virtualDom.html`;
   };
 }
