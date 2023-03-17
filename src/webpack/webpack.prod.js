@@ -4,7 +4,7 @@ const CompressionPlugin = require("compression-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const env = process.env.NODE_ENV || "development";
-const webpackConfig = require("./webpack.dev.js")(env);
+const webpackConfig = require("./webpack.config.js")(env);
 
 module.exports = merge(webpackConfig, {
   mode: env,

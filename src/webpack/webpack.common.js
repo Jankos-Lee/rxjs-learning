@@ -16,6 +16,10 @@ exports.entries = () => {
       import: "./src/entries/operators.js",
       filename: "bundle/[name].js",
     },
+    virtualDom: {
+      import: "./src/entries/virtual.dom.entry.js",
+      filename: "bundle/[name].js",
+    }
   };
 };
 

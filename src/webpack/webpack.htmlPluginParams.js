@@ -17,4 +17,10 @@ exports.htmlPluginParams = [
     template: "./src/html/operators.html",
     chunks: ["operators"],
   },
+  {
+    title: "VirtualDom Demo",
+    filename: "virtualDom.html",
+    template: "./src/html/virtualDom.html",
+    chunks: ["virtualDom"],
+  },
 ];
