@@ -1,10 +1,10 @@
 const { merge } = require("webpack-merge");
-const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
+// const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 const env = process.env.NODE_ENV || "development";
-const webpackConfig = require("./webpack.dev.js")(env);
+const webpackConfig = require("./webpack.config.js")(env);
 
 module.exports = merge(webpackConfig, {
   mode: env,
@@ -19,11 +19,11 @@ module.exports = merge(webpackConfig, {
   ],
   optimization: {
     minimizer: [
-      new UglifyJsPlugin({
-        cache: true,
-        sourceMap: true, // 是否启用文件缓存
-        parallel: true, // 使用多进程并行运行来提高构建速度
-      }),
+      // new UglifyJsPlugin({
+      //   cache: true,
+      //   sourceMap: true, // 是否启用文件缓存
+      //   parallel: true, // 使用多进程并行运行来提高构建速度
+      // }),
     ],
   },
 });
